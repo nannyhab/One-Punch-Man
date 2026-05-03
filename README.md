@@ -1,7 +1,7 @@
 # CS396-CS496 Final Project
 
 - [ ] Project Proposal Presentation (Team): https://docs.google.com/presentation/d/13FWo3wLMMpcMSRN69qr5fNbLC2rCDjNg2mUQnIKeC_w/edit?usp=sharing
-- [ ] Project Proposal (Adnan): 
+- [ ] Project Proposal (Adnan): https://docs.google.com/document/d/1i90SdiYw3B3JvVZjjKe5bVKqQrrA64BtRY2KGgEZPuU/edit?usp=sharing
 
 
 # Deadline Sunday, May 10th 5/10/26
