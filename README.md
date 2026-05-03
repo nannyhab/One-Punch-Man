@@ -1,4 +1,4 @@
-#CS396-CS496 Final Project
+# CS396-CS496 Final Project
 
 # Deadline Sunday May 10th 5/10/26
 - [ ] Data collection involving IMU sensors (Novel), signal processing (Novel, Mercy), ~100 punching samples 
