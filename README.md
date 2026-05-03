@@ -1,5 +1,9 @@
 # CS396-CS496 Final Project
 
+Project Proposal Presentation: https://docs.google.com/presentation/d/13FWo3wLMMpcMSRN69qr5fNbLC2rCDjNg2mUQnIKeC_w/edit?usp=sharing
+Project Proposal: 
+
+
 # Deadline Sunday May 10th 5/10/26
 - [ ] Data collection involving IMU sensors (Novel), signal processing (Novel, Mercy), ~100 punching samples 
 - [ ] Preprocessing data (FFT, STFT), augmentation methods (Novel, Mercy)
