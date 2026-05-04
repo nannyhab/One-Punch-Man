@@ -1,0 +1,65 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{titling}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{xcolor}
+
+\definecolor{accent}{HTML}{1F3A5F}
+
+% --- Title block ---
+\setlength{\droptitle}{-3em}
+\pretitle{\begin{center}\LARGE\color{accent}}
+\posttitle{\par\end{center}\vspace{0.2em}}
+\preauthor{\begin{center}\normalsize}
+\postauthor{\par\end{center}}
+\predate{\begin{center}\small\itshape\color{black!65}}
+\postdate{\par\end{center}}
+
+% --- Section styling: clean, generous spacing ---
+\titleformat{\section}
+  {\normalfont\bfseries\large\color{accent}}{}{0pt}{}
+\titlespacing*{\section}{0pt}{1.4em}{0.5em}
+
+% --- Generous line spacing for readability ---
+\linespread{1.18}
+
+\title{\textbf{One Punch Man}\\[5pt]
+  {\large\normalfont\itshape Real-Time IMU-Based Punch Detection for Interactive Gameplay}}
+\author{Ahmed Alzahrani \quad Adnan Alhabian \quad Chibueze Anyachebelu \quad Mercy Muiruri \quad Novel Alam}
+\date{CS 396/496 \,\textbullet\, Northwestern University \,\textbullet\, Spring 2026}
+
+\begin{document}
+\maketitle
+\vspace{-1.5em}
+
+\section*{Goal}
+Fighting games today abstract physical action into button presses. We bridge that gap with a wrist-worn 9-axis IMU that captures real punches and drives in-game actions in real time. The system recognizes three punch classes --- \emph{right straight}, \emph{right hook}, and \emph{uppercut} --- and injects them as controller inputs into a fighting game.
+
+\section*{Method --- Sensing}
+A Xiao Seeed nRF52840 with an integrated 9-axis IMU samples at 100\,Hz and streams over BLE to a host. An on-device onset detector gates transmission to active-motion windows only, capturing each gesture for post-hoc labeling.
+
+\section*{Method --- ML}
+Raw IMU streams are filtered, normalized, segmented into fixed windows, and augmented before classification. We apply transfer learning: a CNN/LSTM feature extractor pretrained on a public IMU dataset is frozen, and a small classifier head is fine-tuned on our three punch classes --- compensating for the limited size of our hand-collected dataset and improving generalization.
+
+\section*{Live Demo and Evaluation}
+The runtime pipeline flows from \emph{on-device onset detection} $\rightarrow$ \emph{BLE streaming} $\rightarrow$ \emph{host-side classification} $\rightarrow$ \emph{game input injection}. Classified punches map to game controls as follows:
+
+\begin{center}
+\begin{tabular}{@{}ll@{}}
+\toprule
+\textbf{Gesture} & \textbf{Game input} \\
+\midrule
+Right straight & Heavy punch \\
+Right hook     & Special --- hook \\
+Uppercut       & Special --- uppercut \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+We will demo against an existing fighting game where possible, with a minimal in-house game as fallback. Evaluation runs at two levels: \emph{offline} (accuracy, precision/recall, F1, ROC-AUC, confusion matrix on a held-out set) and \emph{live end-to-end} (onset-to-action latency, detection accuracy, false-trigger rate, throughput, cross-user consistency).
+
+\end{document}
