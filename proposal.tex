@@ -46,7 +46,12 @@ A Xiao Seeed nRF52840 with an integrated 9-axis IMU samples at 100\,Hz and strea
 Raw IMU streams are filtered, normalized, segmented into fixed windows, and augmented before classification. We apply transfer learning: a feature extractor pretrained on a public IMU dataset is frozen, and a small classifier head is fine-tuned on our three punch classes --- compensating for the limited size of our hand-collected dataset and improving generalization.
 
 \section*{Live Demo and Evaluation}
+
+We will demo against an existing fighting game where possible, with a minimal in-house game as fallback. Evaluation runs at two levels: \emph{offline} (accuracy, precision/recall, F1, ROC-AUC, confusion matrix on a held-out set) and \emph{live end-to-end} (onset-to-action latency, detection accuracy, false-trigger rate, throughput, cross-user consistency).
+
 The runtime pipeline flows from \emph{on-device onset detection} $\rightarrow$ \emph{BLE streaming} $\rightarrow$ \emph{host-side classification} $\rightarrow$ \emph{game input injection}. Classified punches map to game controls as follows:
+
+\bigbreak
 
 \begin{center}
 \begin{tabular}{@{}ll@{}}
@@ -59,7 +64,5 @@ Uppercut       & Special --- uppercut \\
 \bottomrule
 \end{tabular}
 \end{center}
-
-We will demo against an existing fighting game where possible, with a minimal in-house game as fallback. Evaluation runs at two levels: \emph{offline} (accuracy, precision/recall, F1, ROC-AUC, confusion matrix on a held-out set) and \emph{live end-to-end} (onset-to-action latency, detection accuracy, false-trigger rate, throughput, cross-user consistency).
 
 \end{document}
