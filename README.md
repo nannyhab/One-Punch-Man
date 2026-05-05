@@ -1,7 +1,7 @@
 # CS396-CS496 Final Project
 
-- [ ] Project Proposal Presentation (Team): https://nuwildcat-my.sharepoint.com/:p:/r/personal/fpr1895_ads_northwestern_edu/Documents/496_Proposal_Presentation.pptx?d=w39b6c4bde5634a0d99d684acc160cf24&csf=1&web=1&e=zd2UTt
-(old version: https://docs.google.com/presentation/d/13FWo3wLMMpcMSRN69qr5fNbLC2rCDjNg2mUQnIKeC_w/edit?usp=sharing)
+- [ ] Project Proposal Presentation (Team): https://nuwildcat-my.sharepoint.com/:p:/r/personal/fpr1895_ads_northwestern_edu/
+- [ ] (old presentation version: https://docs.google.com/presentation/d/13FWo3wLMMpcMSRN69qr5fNbLC2rCDjNg2mUQnIKeC_w/edit?usp=sharing)
 - [ ] Project Proposal (Adnan): https://docs.google.com/document/d/1i90SdiYw3B3JvVZjjKe5bVKqQrrA64BtRY2KGgEZPuU/edit?usp=sharing
 
 
