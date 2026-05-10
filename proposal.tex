@@ -34,7 +34,7 @@
 \bigbreak
 \bigbreak
 \section*{Goal}
-Fighting games today abstract physical action into button presses. We bridge that gap with a wrist-worn 9-axis IMU that captures real punches and drives in-game actions in real time. The system recognizes three punch classes --- \emph{right straight}, \emph{right hook}, and \emph{right uppercut} --- and injects them as controller inputs into a fighting game.
+Fighting games today abstract physical action into button presses. We bridge that gap with a wrist-worn 6-axis IMU that captures real punches and drives in-game actions in real time. The system recognizes three punch classes --- \emph{right straight}, \emph{right hook}, and \emph{right uppercut} --- and injects them as controller inputs into a fighting game.
 \bigbreak
 \section*{Method --- Sensing}
 A Xiao Seeed nRF52840 with an integrated 6-axis IMU samples at 104\,Hz and streams over BLE to a host. An on-device onset detector gates transmission to active-motion windows only, capturing each gesture for post-hoc labeling.
