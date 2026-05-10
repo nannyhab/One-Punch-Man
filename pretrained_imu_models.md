@@ -1,6 +1,6 @@
 # Pretrained IMU Models — Benchmark Set for *One Punch Man*
 
-Wrist-worn, 9-axis, 100 Hz, 3 punch classes.
+Wrist-worn, 6-axis, 104 Hz, 3 punch classes.
 ## Quick Comparison
 
 | # | Model | Family | Axes | Rate | Pretrain Data | Repo |
