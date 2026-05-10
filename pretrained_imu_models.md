@@ -28,7 +28,7 @@ Improves on IMU2CLIP with combined SSL + video/text contrastive + nearest-neighb
 
 ## Caveats
 
-- **Magnetometer**: none of the four models above natively consume 9 axes — all drop the magnetometer. If your mag turns out to carry useful absolute-orientation info (likely for hook vs uppercut), expect a ceiling on transfer-learning gains and consider a parallel from-scratch 9-axis baseline.
+
 - **Sampling rate**: punches contain content up to 30–40 Hz (esp. gyro). Models running at ≤30 Hz partially throw that away. Your 20 Hz Butterworth already pre-bandlimits — keep this in mind when interpreting results from low-rate models.
 - **Domain shift**: wrist (Oxford, UniMTS-wrist) > smartphone-pocket (LIMU-BERT) > head (PRIMUS). Weight your expectations accordingly.
 - **Fine-tuning recipe**: start with frozen-encoder + linear head; if data permits, also unfreeze the last 1–2 blocks at low LR. Report both numbers.
