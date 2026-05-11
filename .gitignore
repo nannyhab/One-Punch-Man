@@ -3,3 +3,7 @@ CLAUDE.md
 .DS_Store
 *.pdf
 /396ML
+data/
+/preprocessing/__pycache__
+/output
+test.ipynb
