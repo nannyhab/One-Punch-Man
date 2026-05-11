@@ -12,7 +12,7 @@ Returns X_train, y_train, X_test, y_test as numpy arrays saved to:
     preprocessing/output/meta_train.csv
     preprocessing/output/meta_test.csv
 
-Your teammates can load these with:
+You can load these with:
     import numpy as np
     X_train = np.load("preprocessing/output/X_train.npy")
     y_train = np.load("preprocessing/output/y_train.npy")
@@ -21,7 +21,7 @@ Your teammates can load these with:
 import numpy as np
 from pathlib import Path
 
-from pipeline import build_manifest, train_test_split_by_file, fit_scaler, build_dataset, LABEL_MAP
+from data_cleaning import build_manifest, train_test_split_by_file, fit_scaler, build_dataset, LABEL_MAP
 from feature_extraction import extract_features
 
 # ── paths ─────────────────────────────────────────────────────────────────────

@@ -8,7 +8,7 @@ Input to all per-window functions:
 
 Master function:
     extract_features(windows)  →  (n_windows, n_features)
-    Pass this as extract_features_fn to pipeline.build_dataset().
+    Pass this as extract_features_fn to data_cleaning.build_dataset().
 
 Feature groups and approximate counts (8 channels):
     time_domain   →  8 channels × 8 stats        =  64
@@ -40,7 +40,8 @@ def extract_time_domain(window: np.ndarray) -> np.ndarray:
     """
     8 statistical features per channel.
 
-    Input:  (window_size, n_channels)
+    Input:  (window_size, n_channels) --
+     takes in a single window i.e (100, 8)
     Output: (n_channels * 8,)
 
     Features: mean, std, rms, max, min, peak (max abs), skewness, kurtosis

@@ -4,6 +4,13 @@ How to go from raw CSV files to a labeled feature matrix ready for a classifier.
 
 ---
 
+# You can also use prepare_data.py to use a pre-made pipeline or follow these steps manually.
+- call in terminal or read the prepare_data file.
+```
+ python preprocessing/prepare_data.py
+```
+
+
 ## Data layout
 
 ```

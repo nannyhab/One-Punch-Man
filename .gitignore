@@ -4,3 +4,6 @@ CLAUDE.md
 *.pdf
 /396ML
 data/
+/preprocessing/__pycache__
+/output
+test.ipynb
