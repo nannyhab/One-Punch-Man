@@ -1,0 +1,10 @@
+
+======================================================================
+PRODUCTION TRAIN — harnet10 (partial, 13 epochs, all data)
+======================================================================
+[prod] manifest rows: 976 (train=780, test=196) — using ALL
+[prod] training set: X=(976, 300, 3)  y=(976,)  classes=[349, 323, 304]
+Using cache found in /Users/nannyhabers/.cache/torch/hub/OxWearables_ssl-wearables_main
+131 Weights loaded
+[model] harnet10 backbone loaded; feature_dim = 1024
+[prod] class weights: [0.9292179 1.0040156 1.0667665]

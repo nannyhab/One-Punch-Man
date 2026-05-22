@@ -1,0 +1,9 @@
+{
+  "checkpoint": "artifacts/limu_bert/checkpoints/limu_bert_production.pt",
+  "mode": "partial",
+  "n_epochs": 22,
+  "training_set": "all 976 files (train+test combined)",
+  "no_val_or_early_stopping": true,
+  "epoch_budget_chosen_via": "val-based best epoch from the prior held-out run",
+  "honest_evaluation": "NONE \u2014 this checkpoint has no held-out signal. Use the existing *_partial.pt checkpoints for reportable test metrics."
+}

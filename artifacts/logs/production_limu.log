@@ -1,0 +1,35 @@
+
+======================================================================
+PRODUCTION TRAIN — limu_bert (partial, 22 epochs, all data)
+======================================================================
+[prod] manifest rows: 976 (train=780, test=196) — using ALL
+[prod] training set: X=(3866, 40, 6)  y=(3866,)  classes=[1397, 1247, 1222]
+[prod] class weights: [0.9192594 1.0298359 1.0509046]
+[epoch   0] lr=1.00e-05  train_loss=1.0641  elapsed=5s
+[epoch   1] lr=2.00e-05  train_loss=0.9871  elapsed=10s
+[epoch   2] lr=3.00e-05  train_loss=0.8647  elapsed=14s
+[epoch   3] lr=4.00e-05  train_loss=0.7240  elapsed=19s
+[epoch   4] lr=5.00e-05  train_loss=0.6011  elapsed=24s
+[epoch   5] lr=5.00e-05  train_loss=0.5048  elapsed=29s
+[epoch   6] lr=4.96e-05  train_loss=0.4185  elapsed=34s
+[epoch   7] lr=4.83e-05  train_loss=0.3636  elapsed=39s
+[epoch   8] lr=4.63e-05  train_loss=0.3152  elapsed=44s
+[epoch   9] lr=4.35e-05  train_loss=0.2863  elapsed=48s
+[epoch  10] lr=4.01e-05  train_loss=0.2553  elapsed=53s
+[epoch  11] lr=3.61e-05  train_loss=0.2349  elapsed=58s
+[epoch  12] lr=3.18e-05  train_loss=0.2161  elapsed=63s
+[epoch  13] lr=2.73e-05  train_loss=0.2197  elapsed=68s
+[epoch  14] lr=2.27e-05  train_loss=0.2029  elapsed=73s
+[epoch  15] lr=1.82e-05  train_loss=0.2005  elapsed=78s
+[epoch  16] lr=1.39e-05  train_loss=0.1799  elapsed=83s
+[epoch  17] lr=9.93e-06  train_loss=0.1784  elapsed=88s
+[epoch  18] lr=6.52e-06  train_loss=0.1803  elapsed=93s
+[epoch  19] lr=3.74e-06  train_loss=0.1757  elapsed=98s
+[epoch  20] lr=1.69e-06  train_loss=0.1866  elapsed=103s
+[epoch  21] lr=4.26e-07  train_loss=0.1753  elapsed=108s
+[prod] saved: /Users/nannyhabers/Documents/NorthwesternUniversity/Classes/Spring2026/CS496/finalProject/FinalProject396-496/artifacts/limu_bert/checkpoints/limu_bert_production.pt  (227 KB)
+[prod] info: /Users/nannyhabers/Documents/NorthwesternUniversity/Classes/Spring2026/CS496/finalProject/FinalProject396-496/artifacts/limu_bert/metrics/production_train_info.json
+
+======================================================================
+ALL PRODUCTION CHECKPOINTS WRITTEN
+======================================================================

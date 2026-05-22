@@ -1,0 +1,28 @@
+{
+  "_description": "Provenance and inference metadata for limu_bert_production.pt.",
+  "confidence_threshold_5pct_ft": 0.9797979797979799,
+  "checkpoint": "artifacts/limu_bert/checkpoints/limu_bert_production.pt",
+  "architecture": "LIMU-BERT (4-layer transformer, hidden=72, 4 heads) + 2-layer MLP head",
+  "mode": "partial",
+  "training_set": "all 976 files (train+test combined)",
+  "n_epochs": 22,
+  "no_val_or_early_stopping": true,
+  "epoch_budget_source": "val-based best epoch from the prior held-out run",
+  "honest_evaluation": "NONE \u2014 this checkpoint has no held-out signal. Use the existing *_partial.pt checkpoints for reportable test metrics.",
+  "inference": {
+    "expected_input_shape": "(N_samples, 6) float32 at 104 Hz, channel order [ax,ay,az,gx,gy,gz] in mg and dps",
+    "class_labels": [
+      "hook",
+      "straight",
+      "upper"
+    ],
+    "confidence_threshold": 0.9797979797979799,
+    "threshold_provenance": "tuned on the held-out 196-file test split during the val-based partial-mode run (initialtraining/limu_bert/metrics/partial_metrics.json) \u2014 picked so the false-trigger rate of incorrect predictions stays below 5%",
+    "threshold_behavior": "Predictor returns (\"none\", confidence) when softmax-max < threshold"
+  },
+  "reference_test_metrics_from_val_based_run": {
+    "note": "These were computed on the 20% held-out test split with limu_bert_partial.pt (initialtraining/limu_bert/checkpoints/limu_bert_partial.pt). The production checkpoint uses the same recipe but trained on 100% of the data, so it has seen these files and cannot be honestly evaluated on them.",
+    "window_macro_f1": 0.9772661182438909,
+    "file_macro_f1": 0.9950573892031414
+  }
+}

@@ -10,7 +10,10 @@
       "Bash(/opt/miniconda3/envs/cs349/bin/python)",
       "Bash(/opt/miniconda3/envs/cs349/bin/python inference_example.py)",
       "Bash(zip -rq punch_classifier_bundle.zip punch_classifier_bundle)",
-      "Bash(unzip -l punch_classifier_bundle.zip)"
+      "Bash(unzip -l punch_classifier_bundle.zip)",
+      "Bash(/opt/miniconda3/envs/cs349/bin/python -c ' *)",
+      "Bash(/opt/miniconda3/envs/cs349/bin/python -u src/train_production.py --only limu)",
+      "Bash(/opt/miniconda3/envs/cs349/bin/python -u src/train_production.py --only harnet)"
     ]
   }
 }
