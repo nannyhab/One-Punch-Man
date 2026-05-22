@@ -1,0 +1,48 @@
+{
+  "window_macro_f1_mean": 0.576459169137265,
+  "window_macro_f1_std": 0.18900361408463148,
+  "file_macro_f1_mean": 0.5712030374910829,
+  "file_macro_f1_std": 0.2089122163521753,
+  "per_person": [
+    {
+      "person": "adnan",
+      "n_test_windows": 816,
+      "n_test_files": 204,
+      "val_macro_f1": 0.9246175587352058,
+      "test_window_macro_f1": 0.6124184046500755,
+      "test_file_macro_f1": 0.5822001150348947
+    },
+    {
+      "person": "ahmed",
+      "n_test_windows": 1024,
+      "n_test_files": 266,
+      "val_macro_f1": 0.9675988404058579,
+      "test_window_macro_f1": 0.6441531118142089,
+      "test_file_macro_f1": 0.697515436188457
+    },
+    {
+      "person": "chi",
+      "n_test_windows": 504,
+      "n_test_files": 126,
+      "val_macro_f1": 0.9402405951595748,
+      "test_window_macro_f1": 0.3508629923724263,
+      "test_file_macro_f1": 0.344758064516129
+    },
+    {
+      "person": "mercy",
+      "n_test_windows": 765,
+      "n_test_files": 191,
+      "val_macro_f1": 0.9142731541950401,
+      "test_window_macro_f1": 0.8766038397565774,
+      "test_file_macro_f1": 0.8867836257309941
+    },
+    {
+      "person": "novel",
+      "n_test_windows": 757,
+      "n_test_files": 189,
+      "val_macro_f1": 0.9567828258858159,
+      "test_window_macro_f1": 0.3982574970930372,
+      "test_file_macro_f1": 0.34475794598493986
+    }
+  ]
+}

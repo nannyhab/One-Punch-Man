@@ -1,0 +1,28 @@
+{
+  "model": "limu_bert",
+  "lr_frozen": 0.0003,
+  "lr_partial": 5e-05,
+  "weight_decay": 0.01,
+  "batch_size": 64,
+  "max_epochs": 100,
+  "warmup_epochs": 5,
+  "early_stop_patience": 10,
+  "grad_clip": 1.0,
+  "seq_len": 40,
+  "in_channels": 6,
+  "source_fs": 104,
+  "target_fs": 20,
+  "resample_up": 5,
+  "resample_down": 26,
+  "window_size_src": 208,
+  "hop_size_src": 52,
+  "apply_zscore_after_unit_convert": false,
+  "pretrain_checkpoint": "/Users/nannyhabers/Documents/NorthwesternUniversity/Classes/Spring2026/CS496/finalProject/FinalProject396-496/finetuning/vendored/LIMU-BERT-Public/saved/pretrain_base_hhar_20_120/hhar.pt",
+  "label_names": [
+    "hook",
+    "straight",
+    "upper"
+  ],
+  "seed": 42,
+  "mode_last_trained": "partial"
+}

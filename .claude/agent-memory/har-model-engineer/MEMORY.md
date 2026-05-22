@@ -1,0 +1,1 @@
+- [HARNet10 feature dim](project_harnet10_feature_dim.md) — torch.hub harnet10 pooled feature is 1024-d; reload backbone via hub at eval time so strict load_state_dict matches.

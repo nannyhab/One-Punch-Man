@@ -1,0 +1,2 @@
+- [Punch classifier pipeline contract](project_pipeline_contract.md) — canonical fs/window/unit/split rules for preprocess+limu_bert+harnet10
+- [Promised artifact list](project_promised_artifacts.md) — full per-model artifact set for runtime accounting in check (e)

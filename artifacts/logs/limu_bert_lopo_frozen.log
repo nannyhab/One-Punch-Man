@@ -1,0 +1,38 @@
+[main] manifest: 976 files; train=780 test=196
+
+========== LOPO held-out = adnan ==========
+[lopo] train=2737  val=313  test=816  test files=204
+[train] device=cpu, mode=frozen, lr=0.0003, max_epochs=100
+[train] class weights: [0.915184  1.0579485 1.0268675]
+[train] early stop at 59 (best=49, f1=0.9246)
+[lopo] adnan: win-F1=0.6124  file-F1=0.5822  val-F1=0.9246
+
+========== LOPO held-out = ahmed ==========
+[lopo] train=2558  val=284  test=1024  test files=266
+[train] device=cpu, mode=frozen, lr=0.0003, max_epochs=100
+[train] class weights: [1.1449676  0.9015396  0.95349276]
+[train] early stop at 57 (best=47, f1=0.9676)
+[lopo] ahmed: win-F1=0.6442  file-F1=0.6975  val-F1=0.9676
+
+========== LOPO held-out = chi ==========
+[lopo] train=3023  val=339  test=504  test files=126
+[train] device=cpu, mode=frozen, lr=0.0003, max_epochs=100
+[train] class weights: [0.7790475 1.0702325 1.15072  ]
+[train] early stop at 74 (best=64, f1=0.9402)
+[lopo] chi: win-F1=0.3509  file-F1=0.3448  val-F1=0.9402
+
+========== LOPO held-out = mercy ==========
+[lopo] train=2789  val=312  test=765  test files=191
+[train] device=cpu, mode=frozen, lr=0.0003, max_epochs=100
+[train] class weights: [0.9142    1.0393767 1.0464233]
+[train] early stop at 80 (best=70, f1=0.9143)
+[lopo] mercy: win-F1=0.8766  file-F1=0.8868  val-F1=0.9143
+
+========== LOPO held-out = novel ==========
+[lopo] train=2788  val=321  test=757  test files=189
+[train] device=cpu, mode=frozen, lr=0.0003, max_epochs=100
+[train] class weights: [0.9030197 1.0580002 1.03898  ]
+[train] early stop at 63 (best=53, f1=0.9568)
+[lopo] novel: win-F1=0.3983  file-F1=0.3448  val-F1=0.9568
+[lopo] window macroF1 mean ± std: 0.5765 ± 0.1890
+[lopo] file   macroF1 mean ± std: 0.5712 ± 0.2089

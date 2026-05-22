@@ -1,0 +1,88 @@
+[main] manifest: 976 files; train=780 test=196
+[main] X_all_train=(3082, 40, 6)  X_test=(784, 40, 6)
+[main] train windows=2772  val windows=310  test windows=784
+[train] device=cpu, mode=frozen, lr=0.0003, max_epochs=100
+[train] class weights: [0.9160168 1.0402225 1.0437607]
+[epoch   0] lr=6.00e-05  train=1.0558  val=1.0078  valF1=0.5962
+[epoch   1] lr=1.20e-04  train=0.9684  val=0.9080  valF1=0.6093
+[epoch   2] lr=1.80e-04  train=0.8658  val=0.8006  valF1=0.6239
+[epoch   3] lr=2.40e-04  train=0.7781  val=0.6942  valF1=0.7087
+[epoch   4] lr=3.00e-04  train=0.6818  val=0.5895  valF1=0.7398
+[epoch   5] lr=3.00e-04  train=0.6153  val=0.5256  valF1=0.7588
+[epoch   6] lr=3.00e-04  train=0.5768  val=0.4820  valF1=0.7901
+[epoch   7] lr=3.00e-04  train=0.5595  val=0.4577  valF1=0.8071
+[epoch   8] lr=2.99e-04  train=0.5205  val=0.4158  valF1=0.8296
+[epoch   9] lr=2.99e-04  train=0.5142  val=0.3924  valF1=0.8462
+[epoch  10] lr=2.98e-04  train=0.5158  val=0.3751  valF1=0.8581
+[epoch  11] lr=2.97e-04  train=0.4821  val=0.3549  valF1=0.8757
+[epoch  12] lr=2.96e-04  train=0.4742  val=0.3409  valF1=0.8876
+[epoch  13] lr=2.95e-04  train=0.4839  val=0.3388  valF1=0.8749
+[epoch  14] lr=2.93e-04  train=0.4518  val=0.3270  valF1=0.8850
+[epoch  15] lr=2.92e-04  train=0.4565  val=0.3189  valF1=0.8865
+[epoch  16] lr=2.90e-04  train=0.4532  val=0.3105  valF1=0.8914
+[epoch  17] lr=2.88e-04  train=0.4324  val=0.3091  valF1=0.8981
+[epoch  18] lr=2.86e-04  train=0.4489  val=0.2895  valF1=0.9171
+[epoch  19] lr=2.84e-04  train=0.4564  val=0.2918  valF1=0.9050
+[epoch  20] lr=2.82e-04  train=0.4404  val=0.2878  valF1=0.9137
+[epoch  21] lr=2.79e-04  train=0.4212  val=0.2829  valF1=0.9175
+[epoch  22] lr=2.77e-04  train=0.4199  val=0.2799  valF1=0.9137
+[epoch  23] lr=2.74e-04  train=0.4094  val=0.2756  valF1=0.9265
+[epoch  24] lr=2.71e-04  train=0.4033  val=0.2749  valF1=0.9268
+[epoch  25] lr=2.68e-04  train=0.3837  val=0.2655  valF1=0.9265
+[epoch  26] lr=2.65e-04  train=0.3990  val=0.2691  valF1=0.9267
+[epoch  27] lr=2.62e-04  train=0.3858  val=0.2621  valF1=0.9236
+[epoch  28] lr=2.59e-04  train=0.3855  val=0.2559  valF1=0.9236
+[epoch  29] lr=2.55e-04  train=0.3883  val=0.2537  valF1=0.9236
+[epoch  30] lr=2.52e-04  train=0.3916  val=0.2593  valF1=0.9135
+[epoch  31] lr=2.48e-04  train=0.3954  val=0.2458  valF1=0.9269
+[epoch  32] lr=2.44e-04  train=0.3752  val=0.2430  valF1=0.9238
+[epoch  33] lr=2.40e-04  train=0.3730  val=0.2441  valF1=0.9201
+[epoch  34] lr=2.36e-04  train=0.3770  val=0.2373  valF1=0.9268
+[epoch  35] lr=2.32e-04  train=0.3935  val=0.2414  valF1=0.9201
+[epoch  36] lr=2.28e-04  train=0.3644  val=0.2362  valF1=0.9232
+[epoch  37] lr=2.24e-04  train=0.3808  val=0.2361  valF1=0.9200
+[epoch  38] lr=2.19e-04  train=0.3661  val=0.2292  valF1=0.9266
+[epoch  39] lr=2.15e-04  train=0.3524  val=0.2305  valF1=0.9231
+[epoch  40] lr=2.10e-04  train=0.3692  val=0.2306  valF1=0.9232
+[epoch  41] lr=2.06e-04  train=0.3697  val=0.2279  valF1=0.9265
+[train] early stop at 41 (best=31, f1=0.9269)
+[main] best val macro-F1: 0.9269  ckpt: /Users/nannyhabers/Documents/NorthwesternUniversity/Classes/Spring2026/CS496/finalProject/FinalProject396-496/artifacts/limu_bert/checkpoints/limu_bert_frozen.pt
+[eval] frozen  window F1=0.9268  file F1=0.9699  threshold=0.939
+
+========== LOPO held-out = adnan ==========
+[lopo] train=2737  val=313  test=816  test files=204
+[train] device=cpu, mode=frozen, lr=0.0003, max_epochs=100
+[train] class weights: [0.915184  1.0579485 1.0268675]
+[train] early stop at 68 (best=58, f1=0.9246)
+[lopo] adnan: win-F1=0.5946  file-F1=0.5628  val-F1=0.9246
+
+========== LOPO held-out = ahmed ==========
+[lopo] train=2558  val=284  test=1024  test files=266
+[train] device=cpu, mode=frozen, lr=0.0003, max_epochs=100
+[train] class weights: [1.1449676  0.9015396  0.95349276]
+[train] early stop at 52 (best=42, f1=0.9642)
+[lopo] ahmed: win-F1=0.6507  file-F1=0.7213  val-F1=0.9642
+
+========== LOPO held-out = chi ==========
+[lopo] train=3023  val=339  test=504  test files=126
+[train] device=cpu, mode=frozen, lr=0.0003, max_epochs=100
+[train] class weights: [0.7790475 1.0702325 1.15072  ]
+[train] early stop at 41 (best=31, f1=0.9311)
+[lopo] chi: win-F1=0.3289  file-F1=0.3291  val-F1=0.9311
+
+========== LOPO held-out = mercy ==========
+[lopo] train=2789  val=312  test=765  test files=191
+[train] device=cpu, mode=frozen, lr=0.0003, max_epochs=100
+[train] class weights: [0.9142    1.0393767 1.0464233]
+[train] early stop at 79 (best=69, f1=0.9270)
+[lopo] mercy: win-F1=0.8760  file-F1=0.8814  val-F1=0.9270
+
+========== LOPO held-out = novel ==========
+[lopo] train=2788  val=321  test=757  test files=189
+[train] device=cpu, mode=frozen, lr=0.0003, max_epochs=100
+[train] class weights: [0.9030197 1.0580002 1.03898  ]
+[train] early stop at 66 (best=56, f1=0.9537)
+[lopo] novel: win-F1=0.4434  file-F1=0.3997  val-F1=0.9537
+[lopo] window macroF1 mean ± std: 0.5787 ± 0.1868
+[lopo] file   macroF1 mean ± std: 0.5788 ± 0.2033
+

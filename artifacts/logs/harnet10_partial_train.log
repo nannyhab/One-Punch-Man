@@ -1,0 +1,39 @@
+[main] manifest: 976 files; train=780 test=196
+[main] X_all_train=(780, 300, 3)  X_test=(196, 300, 3)
+[main] train windows=702  val windows=78  test windows=196
+[train] device=cpu, mode=partial, lr=1e-05, max_epochs=100
+Using cache found in /Users/nannyhabers/.cache/torch/hub/OxWearables_ssl-wearables_main
+131 Weights loaded
+[model] harnet10 backbone loaded; feature_dim = 1024
+[train] class weights: [0.9293636 1.0054753 1.0651611]
+[epoch   0] lr=2.00e-06  train=1.1064  val=1.1037  valF1=0.2355
+[epoch   1] lr=4.00e-06  train=1.0771  val=1.0576  valF1=0.3636
+[epoch   2] lr=6.00e-06  train=1.0307  val=0.9723  valF1=0.6849
+[epoch   3] lr=8.00e-06  train=0.9829  val=0.8710  valF1=0.8156
+[epoch   4] lr=1.00e-05  train=0.9024  val=0.7481  valF1=0.8556
+[epoch   5] lr=1.00e-05  train=0.8189  val=0.6441  valF1=0.8964
+[epoch   6] lr=1.00e-05  train=0.7191  val=0.5300  valF1=0.9357
+[epoch   7] lr=9.99e-06  train=0.6159  val=0.4222  valF1=0.9484
+[epoch   8] lr=9.98e-06  train=0.5282  val=0.3333  valF1=0.9742
+[epoch   9] lr=9.96e-06  train=0.4336  val=0.2650  valF1=0.9871
+[epoch  10] lr=9.93e-06  train=0.3510  val=0.1962  valF1=0.9871
+[epoch  11] lr=9.90e-06  train=0.2650  val=0.1363  valF1=0.9871
+[epoch  12] lr=9.87e-06  train=0.2115  val=0.0994  valF1=0.9871
+[epoch  13] lr=9.83e-06  train=0.1656  val=0.0692  valF1=1.0000
+[epoch  14] lr=9.78e-06  train=0.1349  val=0.0538  valF1=1.0000
+[epoch  15] lr=9.73e-06  train=0.1158  val=0.0428  valF1=1.0000
+[epoch  16] lr=9.67e-06  train=0.0840  val=0.0328  valF1=1.0000
+[epoch  17] lr=9.61e-06  train=0.0637  val=0.0243  valF1=1.0000
+[epoch  18] lr=9.55e-06  train=0.0587  val=0.0182  valF1=1.0000
+[epoch  19] lr=9.47e-06  train=0.0482  val=0.0147  valF1=1.0000
+[epoch  20] lr=9.40e-06  train=0.0470  val=0.0128  valF1=1.0000
+[epoch  21] lr=9.32e-06  train=0.0347  val=0.0113  valF1=1.0000
+[epoch  22] lr=9.23e-06  train=0.0385  val=0.0099  valF1=1.0000
+[epoch  23] lr=9.14e-06  train=0.0291  val=0.0091  valF1=1.0000
+[train] early stop at 23 (best=13, f1=1.0000)
+[main] best val macro-F1: 1.0000  ckpt: /Users/nannyhabers/Documents/NorthwesternUniversity/Classes/Spring2026/CS496/finalProject/FinalProject396-496/artifacts/harnet10/checkpoints/harnet10_partial.pt
+[main] manifest: 976 files; train=780 test=196
+Using cache found in /Users/nannyhabers/.cache/torch/hub/OxWearables_ssl-wearables_main
+131 Weights loaded
+[model] harnet10 backbone loaded; feature_dim = 1024
+[eval] partial  window F1=0.9947  file F1=0.9947  threshold=0.468

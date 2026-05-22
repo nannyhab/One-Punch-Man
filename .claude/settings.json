@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(kill 27622)",
+      "Bash(/opt/miniconda3/envs/cs349/bin/python -u src/harnet10.py --task train --mode partial)",
+      "Bash(/opt/miniconda3/envs/cs349/bin/python -u src/harnet10.py --task eval --mode partial)",
+      "Bash(/opt/miniconda3/envs/cs349/bin/python -u src/harnet10.py --task lopo --mode frozen)",
+      "Bash(/opt/miniconda3/envs/cs349/bin/python -u src/limu_bert.py --task lopo --mode frozen)",
+      "Bash(grep -c '\\\\.npy$')",
+      "Bash(/opt/miniconda3/envs/cs349/bin/python)",
+      "Bash(/opt/miniconda3/envs/cs349/bin/python inference_example.py)",
+      "Bash(zip -rq punch_classifier_bundle.zip punch_classifier_bundle)",
+      "Bash(unzip -l punch_classifier_bundle.zip)"
+    ]
+  }
+}

@@ -1,0 +1,110 @@
+Using cache found in /Users/nannyhabers/.cache/torch/hub/OxWearables_ssl-wearables_main
+Using cache found in /Users/nannyhabers/.cache/torch/hub/OxWearables_ssl-wearables_main
+Using cache found in /Users/nannyhabers/.cache/torch/hub/OxWearables_ssl-wearables_main
+Using cache found in /Users/nannyhabers/.cache/torch/hub/OxWearables_ssl-wearables_main
+Using cache found in /Users/nannyhabers/.cache/torch/hub/OxWearables_ssl-wearables_main
+Using cache found in /Users/nannyhabers/.cache/torch/hub/OxWearables_ssl-wearables_main
+Using cache found in /Users/nannyhabers/.cache/torch/hub/OxWearables_ssl-wearables_main
+Using cache found in /Users/nannyhabers/.cache/torch/hub/OxWearables_ssl-wearables_main
+Using cache found in /Users/nannyhabers/.cache/torch/hub/OxWearables_ssl-wearables_main
+Using cache found in /Users/nannyhabers/.cache/torch/hub/OxWearables_ssl-wearables_main
+Using cache found in /Users/nannyhabers/.cache/torch/hub/OxWearables_ssl-wearables_main
+/var/folders/b8/nczryh617k38_zc5ynz9m1km0000gn/T/tmpwq91juqu: line 3: 27622 Terminated: 15          python -u src/harnet10.py --task all --mode frozen
+
+ERROR conda.cli.main_run:execute(127): `conda run python -u src/harnet10.py --task all --mode frozen` failed. (See above for error)
+[main] manifest: 976 files; train=780 test=196
+[main] X_all_train=(780, 300, 3)  X_test=(196, 300, 3)
+[main] train windows=702  val windows=78  test windows=196
+[train] device=cpu, mode=frozen, lr=0.0003, max_epochs=100
+131 Weights loaded
+[model] harnet10 backbone loaded; feature_dim = 1024
+[train] class weights: [0.9293636 1.0054753 1.0651611]
+[epoch   0] lr=6.00e-05  train=1.0627  val=1.0434  valF1=0.5280
+[epoch   1] lr=1.20e-04  train=0.9411  val=0.8411  valF1=0.6636
+[epoch   2] lr=1.80e-04  train=0.8355  val=0.7027  valF1=0.6991
+[epoch   3] lr=2.40e-04  train=0.7243  val=0.6160  valF1=0.7417
+[epoch   4] lr=3.00e-04  train=0.6591  val=0.5301  valF1=0.8156
+[epoch   5] lr=3.00e-04  train=0.5396  val=0.4741  valF1=0.8166
+[epoch   6] lr=3.00e-04  train=0.4957  val=0.3790  valF1=0.8967
+[epoch   7] lr=3.00e-04  train=0.4621  val=0.3499  valF1=0.9097
+[epoch   8] lr=2.99e-04  train=0.4082  val=0.3270  valF1=0.9093
+[epoch   9] lr=2.99e-04  train=0.4087  val=0.3093  valF1=0.8834
+[epoch  10] lr=2.98e-04  train=0.3838  val=0.3019  valF1=0.8695
+[epoch  11] lr=2.97e-04  train=0.3448  val=0.2580  valF1=0.8967
+[epoch  12] lr=2.96e-04  train=0.3364  val=0.2329  valF1=0.9230
+[epoch  13] lr=2.95e-04  train=0.3428  val=0.2312  valF1=0.9097
+[epoch  14] lr=2.93e-04  train=0.3196  val=0.2186  valF1=0.9356
+[epoch  15] lr=2.92e-04  train=0.3144  val=0.1990  valF1=0.9484
+[epoch  16] lr=2.90e-04  train=0.2883  val=0.1900  valF1=0.9357
+[epoch  17] lr=2.88e-04  train=0.3106  val=0.2056  valF1=0.9484
+[epoch  18] lr=2.86e-04  train=0.3288  val=0.2084  valF1=0.9097
+[epoch  19] lr=2.84e-04  train=0.2821  val=0.1904  valF1=0.9617
+[epoch  20] lr=2.82e-04  train=0.2762  val=0.1671  valF1=0.9614
+[epoch  21] lr=2.79e-04  train=0.2330  val=0.1637  valF1=0.9871
+[epoch  22] lr=2.77e-04  train=0.2812  val=0.1673  valF1=0.9616
+[epoch  23] lr=2.74e-04  train=0.2680  val=0.1871  valF1=0.9617
+[epoch  24] lr=2.71e-04  train=0.2561  val=0.1545  valF1=0.9747
+[epoch  25] lr=2.68e-04  train=0.2605  val=0.1413  valF1=0.9742
+[epoch  26] lr=2.65e-04  train=0.2511  val=0.1533  valF1=0.9871
+[epoch  27] lr=2.62e-04  train=0.2363  val=0.1413  valF1=0.9614
+[epoch  28] lr=2.59e-04  train=0.2347  val=0.1258  valF1=0.9871
+[epoch  29] lr=2.55e-04  train=0.2448  val=0.1465  valF1=0.9614
+[epoch  30] lr=2.52e-04  train=0.2474  val=0.1557  valF1=0.9742
+[epoch  31] lr=2.48e-04  train=0.2392  val=0.1389  valF1=0.9871
+[train] early stop at 31 (best=21, f1=0.9871)
+[main] best val macro-F1: 0.9871  ckpt: /Users/nannyhabers/Documents/NorthwesternUniversity/Classes/Spring2026/CS496/finalProject/FinalProject396-496/artifacts/harnet10/checkpoints/harnet10_frozen.pt
+131 Weights loaded
+[model] harnet10 backbone loaded; feature_dim = 1024
+[eval] frozen  window F1=0.9336  file F1=0.9336  threshold=0.966
+
+========== LOPO held-out = adnan ==========
+[lopo] train=694  val=78  test=204  test files=204
+[train] device=cpu, mode=frozen, lr=0.0003, max_epochs=100
+131 Weights loaded
+[model] harnet10 backbone loaded; feature_dim = 1024
+[train] class weights: [0.9303428 1.0209072 1.04875  ]
+[train] early stop at 27 (best=17, f1=0.9108)
+131 Weights loaded
+[model] harnet10 backbone loaded; feature_dim = 1024
+[lopo] adnan: win-F1=0.6762  file-F1=0.6762  val-F1=0.9108
+
+========== LOPO held-out = ahmed ==========
+[lopo] train=639  val=71  test=266  test files=266
+[train] device=cpu, mode=frozen, lr=0.0003, max_epochs=100
+131 Weights loaded
+[model] harnet10 backbone loaded; feature_dim = 1024
+[train] class weights: [1.1455173 0.9007487 0.9537339]
+[train] early stop at 23 (best=13, f1=1.0000)
+131 Weights loaded
+[model] harnet10 backbone loaded; feature_dim = 1024
+[lopo] ahmed: win-F1=0.6956  file-F1=0.6956  val-F1=1.0000
+
+========== LOPO held-out = chi ==========
+[lopo] train=765  val=85  test=126  test files=126
+[train] device=cpu, mode=frozen, lr=0.0003, max_epochs=100
+131 Weights loaded
+[model] harnet10 backbone loaded; feature_dim = 1024
+[train] class weights: [0.7905264 1.0385996 1.170874 ]
+[train] early stop at 35 (best=25, f1=0.9534)
+131 Weights loaded
+[model] harnet10 backbone loaded; feature_dim = 1024
+[lopo] chi: win-F1=0.3813  file-F1=0.3813  val-F1=0.9534
+
+========== LOPO held-out = mercy ==========
+[lopo] train=706  val=79  test=191  test files=191
+[train] device=cpu, mode=frozen, lr=0.0003, max_epochs=100
+131 Weights loaded
+[model] harnet10 backbone loaded; feature_dim = 1024
+[train] class weights: [0.92711717 1.006698   1.0661848 ]
+[train] early stop at 36 (best=26, f1=0.9500)
+131 Weights loaded
+[model] harnet10 backbone loaded; feature_dim = 1024
+[lopo] mercy: win-F1=0.5332  file-F1=0.5332  val-F1=0.9500
+
+========== LOPO held-out = novel ==========
+[lopo] train=708  val=79  test=189  test files=189
+[train] device=cpu, mode=frozen, lr=0.0003, max_epochs=100
+131 Weights loaded
+[model] harnet10 backbone loaded; feature_dim = 1024
+[train] class weights: [0.9183872 1.0177797 1.0638331]
+

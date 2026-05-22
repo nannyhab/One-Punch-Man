@@ -1,0 +1,72 @@
+{
+  "mode": "partial",
+  "window_level": {
+    "accuracy": 0.9948979591836735,
+    "macro_f1": 0.9947006498012744,
+    "weighted_f1": 0.9948963498086131,
+    "per_class": {
+      "hook": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "straight": {
+        "precision": 0.9848484848484849,
+        "recall": 1.0,
+        "f1": 0.9923664122137404
+      },
+      "upper": {
+        "precision": 1.0,
+        "recall": 0.9836065573770492,
+        "f1": 0.9917355371900827
+      }
+    },
+    "confusion_matrix": [
+      [
+        70,
+        0,
+        0
+      ],
+      [
+        0,
+        65,
+        0
+      ],
+      [
+        0,
+        1,
+        60
+      ]
+    ],
+    "roc_auc": {
+      "hook": 1.0,
+      "straight": 0.9998825601879037,
+      "upper": 0.9998785670916819
+    }
+  },
+  "file_level": {
+    "accuracy": 0.9948979591836735,
+    "macro_f1": 0.9947006498012744,
+    "weighted_f1": 0.9948963498086131,
+    "confusion_matrix": [
+      [
+        70,
+        0,
+        0
+      ],
+      [
+        0,
+        65,
+        0
+      ],
+      [
+        0,
+        1,
+        60
+      ]
+    ]
+  },
+  "confidence_threshold_5pct_ft": 0.468013468013468,
+  "n_test_windows": 196,
+  "n_test_files": 196
+}

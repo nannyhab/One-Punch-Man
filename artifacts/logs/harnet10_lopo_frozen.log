@@ -1,0 +1,68 @@
+[main] manifest: 976 files; train=780 test=196
+
+========== LOPO held-out = adnan ==========
+[lopo] train=694  val=78  test=204  test files=204
+[train] device=cpu, mode=frozen, lr=0.0003, max_epochs=100
+Using cache found in /Users/nannyhabers/.cache/torch/hub/OxWearables_ssl-wearables_main
+131 Weights loaded
+[model] harnet10 backbone loaded; feature_dim = 1024
+[train] class weights: [0.9303428 1.0209072 1.04875  ]
+[train] early stop at 33 (best=23, f1=0.9108)
+Using cache found in /Users/nannyhabers/.cache/torch/hub/OxWearables_ssl-wearables_main
+131 Weights loaded
+[model] harnet10 backbone loaded; feature_dim = 1024
+[lopo] adnan: win-F1=0.7520  file-F1=0.7520  val-F1=0.9108
+
+========== LOPO held-out = ahmed ==========
+[lopo] train=639  val=71  test=266  test files=266
+[train] device=cpu, mode=frozen, lr=0.0003, max_epochs=100
+Using cache found in /Users/nannyhabers/.cache/torch/hub/OxWearables_ssl-wearables_main
+131 Weights loaded
+[model] harnet10 backbone loaded; feature_dim = 1024
+[train] class weights: [1.1455173 0.9007487 0.9537339]
+[train] early stop at 27 (best=17, f1=1.0000)
+Using cache found in /Users/nannyhabers/.cache/torch/hub/OxWearables_ssl-wearables_main
+131 Weights loaded
+[model] harnet10 backbone loaded; feature_dim = 1024
+[lopo] ahmed: win-F1=0.7359  file-F1=0.7359  val-F1=1.0000
+
+========== LOPO held-out = chi ==========
+[lopo] train=765  val=85  test=126  test files=126
+[train] device=cpu, mode=frozen, lr=0.0003, max_epochs=100
+Using cache found in /Users/nannyhabers/.cache/torch/hub/OxWearables_ssl-wearables_main
+131 Weights loaded
+[model] harnet10 backbone loaded; feature_dim = 1024
+[train] class weights: [0.7905264 1.0385996 1.170874 ]
+[train] early stop at 20 (best=10, f1=0.9424)
+Using cache found in /Users/nannyhabers/.cache/torch/hub/OxWearables_ssl-wearables_main
+131 Weights loaded
+[model] harnet10 backbone loaded; feature_dim = 1024
+[lopo] chi: win-F1=0.5190  file-F1=0.5190  val-F1=0.9424
+
+========== LOPO held-out = mercy ==========
+[lopo] train=706  val=79  test=191  test files=191
+[train] device=cpu, mode=frozen, lr=0.0003, max_epochs=100
+Using cache found in /Users/nannyhabers/.cache/torch/hub/OxWearables_ssl-wearables_main
+131 Weights loaded
+[model] harnet10 backbone loaded; feature_dim = 1024
+[train] class weights: [0.92711717 1.006698   1.0661848 ]
+[train] early stop at 37 (best=27, f1=0.9375)
+Using cache found in /Users/nannyhabers/.cache/torch/hub/OxWearables_ssl-wearables_main
+131 Weights loaded
+[model] harnet10 backbone loaded; feature_dim = 1024
+[lopo] mercy: win-F1=0.7081  file-F1=0.7081  val-F1=0.9375
+
+========== LOPO held-out = novel ==========
+[lopo] train=708  val=79  test=189  test files=189
+[train] device=cpu, mode=frozen, lr=0.0003, max_epochs=100
+Using cache found in /Users/nannyhabers/.cache/torch/hub/OxWearables_ssl-wearables_main
+131 Weights loaded
+[model] harnet10 backbone loaded; feature_dim = 1024
+[train] class weights: [0.9183872 1.0177797 1.0638331]
+[train] early stop at 36 (best=26, f1=0.9626)
+Using cache found in /Users/nannyhabers/.cache/torch/hub/OxWearables_ssl-wearables_main
+131 Weights loaded
+[model] harnet10 backbone loaded; feature_dim = 1024
+[lopo] novel: win-F1=0.6889  file-F1=0.6889  val-F1=0.9626
+[lopo] window macroF1 mean ± std: 0.6808 ± 0.0838
+[lopo] file   macroF1 mean ± std: 0.6808 ± 0.0838

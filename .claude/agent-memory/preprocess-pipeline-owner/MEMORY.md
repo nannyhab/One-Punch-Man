@@ -1,0 +1,1 @@
+- [sample_idx is a counter, not a timestamp](project_sample_idx_is_counter.md) — real per-file fs verification from CSV alone is impossible; expect actual_fs to always read 104.0.

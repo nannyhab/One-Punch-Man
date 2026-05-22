@@ -1,0 +1,48 @@
+{
+  "window_macro_f1_mean": 0.6807906298438798,
+  "window_macro_f1_std": 0.08377660349066993,
+  "file_macro_f1_mean": 0.6807906298438798,
+  "file_macro_f1_std": 0.08377660349066993,
+  "per_person": [
+    {
+      "person": "adnan",
+      "n_test_windows": 204,
+      "n_test_files": 204,
+      "val_macro_f1": 0.9108065873302079,
+      "test_window_macro_f1": 0.7520028135346011,
+      "test_file_macro_f1": 0.7520028135346011
+    },
+    {
+      "person": "ahmed",
+      "n_test_windows": 266,
+      "n_test_files": 266,
+      "val_macro_f1": 1.0,
+      "test_window_macro_f1": 0.7359343542769906,
+      "test_file_macro_f1": 0.7359343542769906
+    },
+    {
+      "person": "chi",
+      "n_test_windows": 126,
+      "n_test_files": 126,
+      "val_macro_f1": 0.942370535831801,
+      "test_window_macro_f1": 0.5190224237843285,
+      "test_file_macro_f1": 0.5190224237843285
+    },
+    {
+      "person": "mercy",
+      "n_test_windows": 191,
+      "n_test_files": 191,
+      "val_macro_f1": 0.9375315578323097,
+      "test_window_macro_f1": 0.70810466873459,
+      "test_file_macro_f1": 0.70810466873459
+    },
+    {
+      "person": "novel",
+      "n_test_windows": 189,
+      "n_test_files": 189,
+      "val_macro_f1": 0.9626260108563199,
+      "test_window_macro_f1": 0.6888888888888888,
+      "test_file_macro_f1": 0.6888888888888888
+    }
+  ]
+}

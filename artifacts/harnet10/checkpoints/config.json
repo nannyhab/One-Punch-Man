@@ -1,0 +1,31 @@
+{
+  "model": "harnet10",
+  "lr_frozen": 0.0003,
+  "lr_partial": 1e-05,
+  "weight_decay": 0.01,
+  "batch_size": 64,
+  "max_epochs": 100,
+  "warmup_epochs": 5,
+  "early_stop_patience": 10,
+  "grad_clip": 1.0,
+  "seq_len": 300,
+  "in_channels": 3,
+  "source_fs": 104,
+  "target_fs": 30,
+  "resample_up": 15,
+  "resample_down": 52,
+  "window_size_src": 0,
+  "hop_size_src": 0,
+  "apply_zscore_after_unit_convert": false,
+  "harnet10_hub": [
+    "OxWearables/ssl-wearables",
+    "harnet10"
+  ],
+  "label_names": [
+    "hook",
+    "straight",
+    "upper"
+  ],
+  "seed": 42,
+  "mode_last_trained": "partial"
+}
