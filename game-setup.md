@@ -31,8 +31,18 @@ Ikemen_GO-dev-macos/Ikemen_GO.command
 
 
 To play the game:
+Go to either:
+- 1. Practice
+_You can just throw punches at an opponent who is stationary_
 
-## Key mappings
+- 2. VS MODE
+- select Quick Match
+_You play against computer_
+
+- 3. Arcade
+- You play against computer also.
+
+## Player selection and Key mappings
 Player 1 (One Punch Man)
 A - straight punch
 S - hook
@@ -43,5 +53,12 @@ M - straight punch
 N - hook
 B - uppercut
 
-Our main player is Player 1 (One Punch Man). You can use other players but Player 1 and Player 2 are the only ones with the necessary key mappings.
+**Our main player is Player 1 (One Punch Man). You can use other players but Player 1 and Player 2 are the only ones with the necessary key mappings.**
+
+Other moves are:
+go forward -- right arrow
+go backward -- left arrow
+jump -- up arrow
+crouch -- bottom arrow.
+The game supports these moves but as of now for our ML project we are only mapping the Straight, Hook and Uppercut moves only and not movement moves.
 
