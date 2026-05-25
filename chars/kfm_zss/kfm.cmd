@@ -185,6 +185,10 @@ time = 3
 
 [Command]
 name = "upper_x"
+command = c
+time = 1
+[Command]
+name = "upper_x"
 command = ~F, D, DF, x
 buffer.time=3
 [Command]

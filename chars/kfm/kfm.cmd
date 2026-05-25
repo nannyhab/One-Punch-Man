@@ -183,6 +183,25 @@ name = "blocking" ;Same name as above (buttons in opposite order)
 command = x,$F
 time = 3
 
+;-| Single-key uppercut aliases (for ML / programmatic input) |-----------
+; Button z triggers upper_x (light uppercut). Map your keyboard key to z
+; in Options > Key Config. The motion inputs below still work unchanged.
+[Command]
+name = "upper_x"
+command = c
+time = 1
+
+[Command]
+name = "upper_y"
+command = z
+time = 1
+
+[Command]
+name = "upper_xy"
+command = z
+time = 1
+
+;-| Original motion inputs (preserved) |----------------------------------
 [Command]
 name = "upper_x"
 command = ~F, D, DF, x
