@@ -22,6 +22,10 @@
           "ailevel": 1
         }
       ]
+    },
+    "training": {
+      "playtime": 0,
+      "clear": 0
     }
   }
 }
