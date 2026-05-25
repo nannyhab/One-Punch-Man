@@ -1,0 +1,15 @@
+res://scripts/boxer.gd
+res://scripts/combat_state_machine.gd
+res://scripts/punch_data.gd
+res://scripts/ui.gd
+res://scripts/main.gd
+res://scripts/player_boxer.gd
+res://scripts/boxer_visual.gd
+res://scripts/stamina_component.gd
+res://scripts/hitbox.gd
+res://scripts/cpu_boxer.gd
+res://scripts/game_state.gd
+res://scripts/mode_select.gd
+res://scripts/health_component.gd
+res://scripts/boxing_ring.gd
+res://scripts/hurtbox.gd

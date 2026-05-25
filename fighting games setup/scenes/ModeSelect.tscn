@@ -1,0 +1,108 @@
+[gd_scene format=3 uid="uid://24r07tmm8eqq"]
+
+[ext_resource type="Script" path="res://scripts/mode_select.gd" id="1"]
+
+[node name="ModeSelect" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.02, 0.025, 0.045, 1)
+
+[node name="Panel" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -260.0
+offset_top = -255.0
+offset_right = 260.0
+offset_bottom = 255.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="Panel"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Title" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 42
+text = "ONE PUNCH MAN"
+horizontal_alignment = 1
+
+[node name="Subtitle" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7, 0.72, 0.8, 1)
+theme_override_font_sizes/font_size = 17
+text = "Straight. Hook. Uppercut."
+horizontal_alignment = 1
+
+[node name="AccentLine" type="HBoxContainer" parent="Panel/VBox"]
+custom_minimum_size = Vector2(0, 8)
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="BlueAccent" type="ColorRect" parent="Panel/VBox/AccentLine"]
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(0.16, 0.47, 1, 1)
+
+[node name="RedAccent" type="ColorRect" parent="Panel/VBox/AccentLine"]
+layout_mode = 2
+size_flags_horizontal = 3
+color = Color(1, 0.18, 0.22, 1)
+
+[node name="Player1NameLabel" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.45, 0.75, 1, 1)
+theme_override_font_sizes/font_size = 14
+text = "BLUE CORNER"
+
+[node name="Player1Input" type="LineEdit" parent="Panel/VBox"]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+placeholder_text = "Enter Player 1 name"
+max_length = 14
+
+[node name="Player2NameLabel" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.45, 0.45, 1)
+theme_override_font_sizes/font_size = 14
+text = "RED CORNER"
+
+[node name="Player2Input" type="LineEdit" parent="Panel/VBox"]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+placeholder_text = "Enter Player 2 name"
+max_length = 14
+
+[node name="VsCpuButton" type="Button" parent="Panel/VBox"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+text = "FIGHT IRON MIKE AI"
+
+[node name="VsPlayerButton" type="Button" parent="Panel/VBox"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+text = "LOCAL 2 PLAYER"
+
+[node name="Hint" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.55, 0.58, 0.65, 1)
+theme_override_font_sizes/font_size = 12
+text = "Built in Godot  •  Local Arcade Mode"
+horizontal_alignment = 1

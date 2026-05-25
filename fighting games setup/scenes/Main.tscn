@@ -1,0 +1,31 @@
+[gd_scene load_steps=8 format=3 uid="uid://main001"]
+
+[ext_resource type="Script" path="res://scripts/main.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://boxingring001" path="res://scenes/BoxingRing.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://playerboxer001" path="res://scenes/PlayerBoxer.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://cpuboxer001" path="res://scenes/CPUBoxer.tscn" id="4"]
+[ext_resource type="PackedScene" uid="uid://player2boxer001" path="res://scenes/Player2Boxer.tscn" id="5"]
+[ext_resource type="Script" path="res://scripts/camera_shake.gd" id="6"]
+[ext_resource type="PackedScene" uid="uid://fightui001" path="res://scenes/UI.tscn" id="7"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1")
+
+[node name="BoxingRing" parent="." instance=ExtResource("2")]
+
+[node name="PlayerBoxer" parent="." instance=ExtResource("3")]
+position = Vector2(420, 360)
+
+[node name="CPUBoxer" parent="." instance=ExtResource("4")]
+position = Vector2(860, 360)
+
+[node name="Player2Boxer" parent="." instance=ExtResource("5")]
+visible = false
+position = Vector2(860, 360)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(640, 360)
+zoom = Vector2(0.9, 0.9)
+script = ExtResource("6")
+
+[node name="UI" parent="." instance=ExtResource("7")]

@@ -1,0 +1,135 @@
+[gd_scene load_steps=18 format=3 uid="uid://playerboxer001"]
+
+[ext_resource type="Script" path="res://scripts/player_boxer.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/health_component.gd" id="2"]
+[ext_resource type="Script" path="res://scripts/stamina_component.gd" id="3"]
+[ext_resource type="Script" path="res://scripts/boxer_visual.gd" id="4"]
+[ext_resource type="Script" path="res://scripts/hitbox.gd" id="5"]
+[ext_resource type="Script" path="res://scripts/hurtbox.gd" id="6"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_body"]
+radius = 28.0
+
+[sub_resource type="RectangleShape2D" id="Rect_straight"]
+size = Vector2(28, 22)
+
+[sub_resource type="RectangleShape2D" id="Rect_hook"]
+size = Vector2(38, 28)
+
+[sub_resource type="RectangleShape2D" id="Rect_upper"]
+size = Vector2(26, 36)
+
+[sub_resource type="RectangleShape2D" id="Rect_head"]
+size = Vector2(28, 26)
+
+[sub_resource type="RectangleShape2D" id="Rect_body"]
+size = Vector2(36, 38)
+
+[sub_resource type="RectangleShape2D" id="Rect_guard"]
+size = Vector2(42, 32)
+
+[node name="PlayerBoxer" type="CharacterBody2D"]
+collision_layer = 0
+collision_mask = 0
+script = ExtResource("1")
+player_slot = 1
+is_player = true
+glove_color = Color(0.29, 0.56, 0.85, 1)
+shorts_color = Color(0.18, 0.35, 0.65, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_body")
+
+[node name="HealthComponent" type="Node" parent="."]
+script = ExtResource("2")
+
+[node name="StaminaComponent" type="Node" parent="."]
+script = ExtResource("3")
+
+[node name="Visual" type="Node2D" parent="."]
+script = ExtResource("4")
+glove_color = Color(0.29, 0.56, 0.85, 1)
+shorts_color = Color(0.18, 0.35, 0.65, 1)
+hair_color = Color(0.15, 0.12, 0.2, 1)
+
+[node name="Outline" type="Polygon2D" parent="Visual"]
+z_index = -2
+
+[node name="Shadow" type="Polygon2D" parent="Visual"]
+z_index = -1
+
+[node name="LegBack" type="Polygon2D" parent="Visual"]
+
+[node name="ShoeBack" type="Polygon2D" parent="Visual"]
+
+[node name="LegFront" type="Polygon2D" parent="Visual"]
+
+[node name="ShoeFront" type="Polygon2D" parent="Visual"]
+
+[node name="Shorts" type="Polygon2D" parent="Visual"]
+
+[node name="ShortsStripe" type="Polygon2D" parent="Visual"]
+
+[node name="Torso" type="Polygon2D" parent="Visual"]
+
+[node name="Head" type="Polygon2D" parent="Visual"]
+
+[node name="Hair" type="Polygon2D" parent="Visual"]
+
+[node name="ArmRear" type="Polygon2D" parent="Visual"]
+
+[node name="GloveRear" type="Polygon2D" parent="Visual"]
+
+[node name="ArmLead" type="Polygon2D" parent="Visual"]
+
+[node name="GloveLead" type="Polygon2D" parent="Visual"]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Visual"]
+root_node = NodePath("..")
+
+[node name="Hitboxes" type="Node2D" parent="."]
+
+[node name="StraightHitbox" type="Area2D" parent="Hitboxes"]
+script = ExtResource("5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitboxes/StraightHitbox"]
+shape = SubResource("Rect_straight")
+
+[node name="HookHitbox" type="Area2D" parent="Hitboxes"]
+script = ExtResource("5")
+punch_kind = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitboxes/HookHitbox"]
+shape = SubResource("Rect_hook")
+
+[node name="UppercutHitbox" type="Area2D" parent="Hitboxes"]
+script = ExtResource("5")
+punch_kind = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitboxes/UppercutHitbox"]
+shape = SubResource("Rect_upper")
+
+[node name="Hurtboxes" type="Node2D" parent="."]
+
+[node name="HeadHurtbox" type="Area2D" parent="Hurtboxes"]
+position = Vector2(0, -133)
+script = ExtResource("6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtboxes/HeadHurtbox"]
+shape = SubResource("Rect_head")
+
+[node name="BodyHurtbox" type="Area2D" parent="Hurtboxes"]
+position = Vector2(0, -48)
+script = ExtResource("6")
+hurt_type = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtboxes/BodyHurtbox"]
+shape = SubResource("Rect_body")
+
+[node name="GuardHurtbox" type="Area2D" parent="Hurtboxes"]
+position = Vector2(18, -84)
+script = ExtResource("6")
+hurt_type = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtboxes/GuardHurtbox"]
+shape = SubResource("Rect_guard")
