@@ -1,3 +1,5 @@
+This file is a summary of what was changed to the original version of IKEMEN GO to support our project.
+
 Here's a summary of what was changed:
 
 Files edited: All 4 character .cmd files
@@ -25,6 +27,8 @@ Why this works: In Ikemen GO, multiple [Command] blocks with the same name all t
 The one in-game step you do once: In Options → Key Config, assign physical keyboard key F to button slot c — so pressing F in a fight sends button c to the engine, which triggers upper_x.
 
 No engine source code was modified.
+
+- Also go to the part that maps the straight punch and hook to 'r' and 't' respectively and map that to 'n' (for hook) and 'm' (straight punch)
 
 MAPPING AS OF NOW:
 Left
