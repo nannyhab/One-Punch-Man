@@ -1,0 +1,27 @@
+{
+  "playtime": 116.27,
+  "modes": {
+    "arcade": {
+      "playtime": 116.27,
+      "clear": 1,
+      "clearcount": {
+        "kfm_zss": 1
+      },
+      "ranking": [
+        {
+          "score": 44400,
+          "time": 116.27,
+          "win": 1,
+          "lose": 0,
+          "consecutive": 1,
+          "name": "AAA",
+          "chars": [
+            "kfm_zss"
+          ],
+          "tmode": 0,
+          "ailevel": 1
+        }
+      ]
+    }
+  }
+}
