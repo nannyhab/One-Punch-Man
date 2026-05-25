@@ -28,15 +28,17 @@ The one in-game step you do once: In Options → Key Config, assign physical key
 
 No engine source code was modified.
 
-- Also go to the part that maps the straight punch and hook to 'r' and 't' respectively and map that to 'n' (for hook) and 'm' (straight punch)
+- Also go to the part that maps the straight punch and hook to 'r' and 't' respectively and map that to 'n' (for hook) and 'm' (straight punch) --> this is changed in the save/config.ini.
 
 MAPPING AS OF NOW:
 Left
 Straight - A
 Hook - S
-Uppercut - F
+Uppercut - D
 
 Right
 Straight - M
 Hook - N
 Uppercut - B
+
+- Lastly change the name and display name of character kfm_zss to be One Punch Man instead of Kung Fu Man
