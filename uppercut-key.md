@@ -33,6 +33,6 @@ Hook - S
 Uppercut - F
 
 Right
-Straight - R
-Hook - T
-Uppercut - H
+Straight - M
+Hook - N
+Uppercut - B
