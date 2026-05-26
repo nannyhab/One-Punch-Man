@@ -184,7 +184,7 @@ ignoreHitPause {
 }
 
 #============|IF roundState = 2|================================================
-if roundState = 2 { #prevent attacks outside of fight state
+if roundState = 2 && !aiLevelF { #prevent attacks outside of fight state; CPU is controlled by AI.zss
 
 #===============================================================================
 #

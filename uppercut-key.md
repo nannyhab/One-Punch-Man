@@ -32,9 +32,9 @@ No engine source code was modified.
 
 MAPPING AS OF NOW:
 Left
-Straight - A
-Hook - S
-Uppercut - D
+Straight - A (200)
+Hook - S (210)
+Uppercut - D (1100)
 
 Right
 Straight - M

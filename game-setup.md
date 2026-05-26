@@ -35,12 +35,11 @@ Go to either:
 - 1. Practice
 _You can just throw punches at an opponent who is stationary_
 
-- 2. VS MODE
-- select Quick Match
-_You play against computer_
+**- 2. VS MODE (preferred)**
+**- select Quick Match**
+**- play against Opponent 1 (the third guy)**
+**_You play against computer_**
 
-- 3. Arcade
-- You play against computer also.
 
 ## Player selection and Key mappings
 Player 1 (One Punch Man)
