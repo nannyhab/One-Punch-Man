@@ -1,0 +1,38 @@
+Version: nightly
+Build Time: 2026.05.22
+Platform: darwin (arm64)
+OpenGL 3.3
+RAM in Use: 101 MB / OS Reserved: 195 MB
+Active Goroutines: 4
+Timestamp: 2026-05-27 20:02:16
+
+Engine error
+
+Error: ./external/script/start.lua:1654: chars/kfm_zss/kfm.zss:232:
+5, 5, 0
+font: Invalid data: ,
+stack traceback:
+	[G]: in function 'game'
+	./external/script/start.lua:1654: in function 'f_game'
+	./external/script/start.lua:2232: in function 'launchFight'
+	external/script/default.lua:2: in function <external/script/default.lua:0>
+	./external/script/start.lua:1710: in function 'f'
+	external/script/main.lua:2407: in function 'loop'
+	external/script/main.lua:2504: in function 'loop'
+	external/script/main.lua:3728: in main chunk
+	[G]: ?
+
+Go stack traceback:
+goroutine 1 [running, locked to thread]:
+runtime/debug.Stack()
+	runtime/debug/stack.go:24 +0x64
+main.handlePanic({0x10288cb40?, 0x14000864000})
+	github.com/ikemen-engine/Ikemen-GO/src/main.go:362 +0x38c
+main.realMain.func1()
+	github.com/ikemen-engine/Ikemen-GO/src/main.go:66 +0x2c
+panic({0x10288cb40, 0x14000864000})
+	runtime/panic.go:884 +0x204
+main.realMain()
+	github.com/ikemen-engine/Ikemen-GO/src/main.go:206 +0x574
+main.main()
+	github.com/ikemen-engine/Ikemen-GO/src/main.go:59 +0x1c

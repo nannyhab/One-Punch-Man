@@ -220,6 +220,18 @@ anim: 200;                            #Change animation (Def: no change)
 poweradd: 10;                         #Power to add (Def: 0)
 sprpriority: 2;]                      #Set p1's sprite layering priority to 2 (in front)
 
+if time = 0 {
+	text{
+		removetime: 90;
+		layerno: 2;
+		text: "STRAIGHT";
+		font: -1;
+		align: 0;
+		pos: screenWidth * 0.5, screenHeight * 0.3;
+		scale: 2, 2;
+	}
+}
+
 if animElem = 3 { 
 	#When using zss sctrls, you must have the bracket on the same line as the
 	#sctrl's name as specified below e.g. "HitDef{"
@@ -280,6 +292,18 @@ type: S; movetype: A; physics: S;
 juggle: 4; poweradd: 30; ctrl: 0;
 velset: 0, 0; anim: 210;
 sprpriority: -1;]
+
+if time = 0 {
+	text{
+		removetime: 90;
+		layerno: 2;
+		text: "HOOK";
+		font: -1;
+		align: 0;
+		pos: screenWidth * 0.5, screenHeight * 0.3;
+		scale: 2, 2;
+	}
+}
 
 if animElemTime(2) >= 0 && animElemTime(7) < 0 {
 	width{value: 15, 0}
@@ -1528,6 +1552,18 @@ if vel y > 0 && pos y >= -5 {
 type: S; movetype: A; physics: S;
 juggle: 4; poweradd: 55; velset: 0, 0;
 anim: 1100; ctrl: 0; sprpriority: 2;]
+
+if time = 0 {
+	text{
+		removetime: 90;
+		layerno: 2;
+		text: "UPPERCUT";
+		font: -1;
+		align: 0;
+		pos: screenWidth * 0.5, screenHeight * 0.3;
+		scale: 2, 2;
+	}
+}
 
 if animElemTime(4) >= 0 && animElemTime(13) < 0 {
 	width{value: 5, 0}
