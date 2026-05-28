@@ -981,7 +981,7 @@ class Predictor:
             x = flat.reshape(x.shape).astype(np.float32)
         return torch.from_numpy(x).unsqueeze(0).to(self.device)
 
-    @torch.no_grad()
+    @torch.no_grad() # function that is used to predict in real-time
     def predict(self, window: np.ndarray) -> tuple[str, float]:
         x = self._prepare(window)
         probs = F.softmax(self.model(x), dim=-1)[0].cpu().numpy()

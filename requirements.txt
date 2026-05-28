@@ -9,3 +9,4 @@ tqdm
 tsaug
 bleak
 pynput
+pyserial
