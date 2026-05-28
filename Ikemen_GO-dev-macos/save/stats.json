@@ -1,5 +1,5 @@
 {
-  "playtime": 464.26,
+  "playtime": 555.08,
   "modes": {
     "arcade": {
       "playtime": 116.27,
@@ -28,7 +28,7 @@
       "clear": 0
     },
     "freebattle": {
-      "playtime": 347.99,
+      "playtime": 438.81,
       "clear": 1,
       "clearcount": {
         "kfm_zss": 1
