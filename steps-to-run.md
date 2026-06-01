@@ -53,6 +53,13 @@ And the character attacks in the game.
 **Ctrl+C** to stop the controller.
 
 ---
+if using the punch_controller.py
+
+python src/punch_controller.py
+
+
+
+---
 
 ## Troubleshooting
 
@@ -63,3 +70,5 @@ And the character attacks in the game.
 | Predictions show `none` | Model confidence below threshold — try throwing a sharper punch |
 | Predictions print but game ignores them | Game window not in focus, or Accessibility permission missing |
 | `pyserial not installed` | `pip install pyserial` |
+
+

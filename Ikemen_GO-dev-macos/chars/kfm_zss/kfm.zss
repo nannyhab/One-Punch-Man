@@ -222,7 +222,7 @@ sprpriority: 2;]                      #Set p1's sprite layering priority to 2 (i
 
 if time = 0 {
 	text{
-		removetime: 90;
+		removetime: 60;
 		layerno: 2;
 		text: "STRAIGHT";
 		font: -1;
@@ -295,7 +295,7 @@ sprpriority: -1;]
 
 if time = 0 {
 	text{
-		removetime: 90;
+		removetime: 60;
 		layerno: 2;
 		text: "HOOK";
 		font: -1;
@@ -1555,7 +1555,7 @@ anim: 1100; ctrl: 0; sprpriority: 2;]
 
 if time = 0 {
 	text{
-		removetime: 90;
+		removetime: 60;
 		layerno: 2;
 		text: "UPPERCUT";
 		font: -1;

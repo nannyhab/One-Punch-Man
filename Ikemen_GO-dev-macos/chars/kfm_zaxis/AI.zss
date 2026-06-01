@@ -98,15 +98,15 @@ if ctrl && stateType != A && $grounded && stateNo != 100 {
 		#Far away — run toward player
 		changeState{value: 100}
 
-	} else if $p2dx < 55 && random <= (150 * (aiLevelF ** 2 / 9600.0)) {
+	} else if $p2dx < 55 && random <= (150 * (aiLevelF ** 2 / 9999999.0)) {
 		#Straight punch
 		changeState{value: 200}
 
-	} else if $p2dx < 55 && random <= (150 * (aiLevelF ** 2 / 9600.0)) {
+	} else if $p2dx < 55 && random <= (150 * (aiLevelF ** 2 / 9999999.0)) {
 		#Hook
 		changeState{value: 210}
 
-	} else if $p2dx < 55 && random <= (150 * (aiLevelF ** 2 / 9600.0)) {
+	} else if $p2dx < 55 && random <= (150 * (aiLevelF ** 2 / 9999999.0)) {
 		#Uppercut
 		changeState{value: 1100}
 
